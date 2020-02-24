@@ -1,0 +1,7 @@
+<mat-nav-list>
+  <a *ngFor="let data of list" [href]="data.url" target="_blank" mat-list-item (click)="closeSheet()">
+    <span matListIcon [innerHTML]="data.icon"></span>
+    <span mat-line class="title">{{data.title}}</span>
+    <span mat-line color="accent" class="subtitle">{{data.subtitle}}</span>
+  </a>
+</mat-nav-list>

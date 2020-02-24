@@ -1,1 +1,26 @@
-<p>index works!</p>
+<div class="categories">
+
+  <div fxLayout.xs="column" fxLayout="row wrap" fxLayoutWrap>
+    <div fxFlex.xs="100%" fxFlex.sm="0 0 50%" fxFlex="25%" *ngFor="let cat of categories">
+
+      <div class="card"  [routerLink]="['/workout/'+cat.id]">
+        <div class="body-card" background="accent">
+          <p class="subtitle">{{cat.subtitle}}</p>
+          <p class="title">{{cat.type}}</p>
+          <img class="wow flipInY" [src]="cat.img"/>
+          <p class="minutes">{{cat.minutes}} minutes</p>
+        </div>
+      </div>
+
+    </div>
+  </div>
+  
+</div>
+
+<!-- <div class="statistics">
+  graficos
+</div>
+
+
+
+https://dribbble.com/shots/7893560-Fitness-App -->

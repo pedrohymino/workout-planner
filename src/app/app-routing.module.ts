@@ -15,7 +15,7 @@ const routes: Routes = [
     component: IndexComponent,
   },
   {
-    path: 'workout',
+    path: 'workout/:id',
     component: WorkoutComponent,
   }
 ];

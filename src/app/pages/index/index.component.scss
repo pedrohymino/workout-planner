@@ -1,0 +1,75 @@
+.categories{
+  *:focus{outline: none !important;}
+
+  mat-grid-list{
+    &,& .mat-grid-tile{
+      min-height: 380px !important;
+      padding:0px !important;
+    }
+    .mat-grid-tile{
+      overflow: initial;
+      & > ::ng-deep figure{
+        align-items: start !important;
+      }
+    }
+  }
+  .card{
+    padding: 0 15px 15px;
+    position: relative;
+    &:hover{
+      cursor: pointer;
+      img{
+        width:120% !important;
+        margin-left: -10%;
+      }
+    }
+    .body-card{
+      min-height: 380px;
+      height: 100%;
+      width: 100%;
+      position: relative;
+      border-radius: 15px;
+
+      .subtitle{
+        margin-bottom: 0px;
+        padding: 10px;
+        letter-spacing: 2px;
+        opacity: .5;
+      }
+      .title{
+        font-size: 47px;
+        word-break: break-word;
+        white-space: pre-wrap;
+        line-height: 44px;
+        padding: 12px;
+      }
+      img{
+        width:100%;
+        position: absolute;
+        bottom: 0;
+        z-index: 80;
+        transition: all .4s ease;
+      }
+      .minutes{
+        position: absolute;
+        top: 0;
+        padding: 10px;
+        margin-bottom: 0px;
+        right: 0;
+        color: #000;
+        opacity: 0.5;
+        letter-spacing: 2px;
+      }
+    }
+  }
+}
+
+
+@keyframes imgAnimation {
+  0%, 100% {
+    left: -20%;
+  }
+  50% {
+    left: -5%;
+  }
+}

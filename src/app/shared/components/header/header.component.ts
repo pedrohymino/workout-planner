@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { TimerServiceService } from '../../../core/services/timer-service.service';
 
 @Component({
   selector: 'app-header',
@@ -7,9 +8,24 @@ import { Component, OnInit } from '@angular/core';
 })
 export class HeaderComponent implements OnInit {
 
-  constructor() { }
+  constructor(private timerService: TimerServiceService) { }
+  
+  _time:any;
 
   ngOnInit(): void {
+    this._time = this.timerService.timer;
+  }
+
+  startTimer(){
+    this.timerService.startTimer();
+  }
+
+  pauseTimer(){
+    this.timerService.pauseTimer();
+  }
+
+  stopTimer(){
+    this.timerService.stopTimer();
   }
 
 }

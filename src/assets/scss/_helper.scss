@@ -1,0 +1,56 @@
+$sides: (left, center, right);
+@each $align in $sides {
+  .txt-#{$align}{
+    text-align: #{$align};
+  }
+}
+
+
+// colors and backgrounds
+$themes: (
+  primary: $gym-primary,
+  accent: $gym-accent,
+  warn: $gym-warn
+);
+@each $theme, $var in $themes {
+  [color="#{$theme}"]{
+    color: map-get($var, 500);
+  }
+  [background="#{$theme}"], .bg-#{$theme}{
+    background: map-get($var, 500);
+  }
+}
+
+
+$flex-align: (start, center, end, space-between);
+@each $align in $flex-align {
+  [justify-content="#{$align}"]{
+    justify-content: #{$align};
+  }
+  [align-items="#{$align}"]{
+    align-items: #{$align};
+  }
+}
+
+$spaces: (5, 15, 20, 25);
+$sides: (top, right, bottom, left);
+
+@each $space in $spaces {
+  @each $side in $sides {
+    .m-#{str-slice($side, 0, 1)}-#{$space} {
+      margin-#{$side}: #{$space}px !important;
+    }
+    // NEGATIVE
+    .nm-#{str-slice($side, 0, 1)}-#{$space} {
+      margin-#{$side}: -#{$space}px !important;
+    }
+
+    .p-#{str-slice($side, 0, 1)}-#{$space} {
+      padding-#{$side}: #{$space}px !important;
+    }
+    // NEGATIVE
+    .np-#{str-slice($side, 0, 1)}-#{$space} {
+      padding-#{$side}: -#{$space}px !important;
+    }
+  }
+}

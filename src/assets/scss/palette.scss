@@ -1,0 +1,120 @@
+@import '~@angular/material/theming';
+@include mat-core();
+
+// Colors
+// https://material.io/resources/color/#!/?view.left=0&view.right=0&primary.color=ff5d06&secondary.color=9b27b0
+// https://material.io/design/color/the-color-system.html#tools-for-picking-colors
+
+// $primary: #ff5c06;
+// $accent: #9c27b0;
+// $warn: #ff062b;
+// $success: #ff062b;
+
+$gym-primary: (
+   50: #fce9e6,
+  100: #ffcdb9,
+  200: #ffad8c,
+  300: #ff8d5c,
+  400: #ff7436,
+  500: #ff5d06,
+  600: #f45701,
+  700: #e65000,
+  800: #d94800,
+  900: #c03a00,
+  contrast: (
+    50: $dark-primary-text,
+    100: $dark-primary-text,
+    200: $dark-primary-text,
+    300: $dark-primary-text,
+    400: $dark-primary-text,
+    500: $light-primary-text,
+    600: $light-primary-text,
+    700: $light-primary-text,
+    800: $light-primary-text,
+    900: $light-primary-text
+  )
+);
+
+$gym-accent: (
+   50: #f3e5f5,
+  100: #e1bee7,
+  200: #ce93d8,
+  300: #ba68c8,
+  400: #ab47bc,
+  500: #9b27b0,
+  600: #8d24aa,
+  700: #7a1fa2,
+  800: #691b9a,
+  900: #49148c,
+  contrast: (
+    50: $dark-primary-text,
+    100: $dark-primary-text,
+    200: $dark-primary-text,
+    300: $dark-primary-text,
+    400: $dark-primary-text,
+    500: $light-primary-text,
+    600: $light-primary-text,
+    700: $light-primary-text,
+    800: $light-primary-text,
+    900: $light-primary-text
+  )
+);
+
+$gym-warn: (
+   50: #ffe9ee,
+  100: #ffc9d1,
+  200: #f69196,
+  300: #ee646d,
+  400: #f93749,
+  500: #ff062b,
+  600: #f0002c,
+  700: #de0026,
+  800: #d1001e,
+  900: #c4000f,
+  contrast: (
+    50: $dark-primary-text,
+    100: $dark-primary-text,
+    200: $dark-primary-text,
+    300: $dark-primary-text,
+    400: $dark-primary-text,
+    500: $light-primary-text,
+    600: $light-primary-text,
+    700: $light-primary-text,
+    800: $light-primary-text,
+    900: $light-primary-text
+  )
+);
+
+$gym-success: (
+   50: #eaffeb,
+  100: #c9ffcc,
+  200: #a1ffa9,
+  300: #6aff81,
+  400: #06ff5d,
+  500: #00fc36,
+  600: #00ea2d,
+  700: #00d321,
+  800: #00be13,
+  900: #009806,
+  contrast: (
+    50: $dark-primary-text,
+    100: $dark-primary-text,
+    200: $dark-primary-text,
+    300: $dark-primary-text,
+    400: $dark-primary-text,
+    500: $light-primary-text,
+    600: $light-primary-text,
+    700: $light-primary-text,
+    800: $light-primary-text,
+    900: $light-primary-text
+  )
+);
+
+
+$gym-app-primary: mat-palette($gym-primary);
+$gym-app-accent:  mat-palette($gym-accent);
+$gym-app-warn:  mat-palette($gym-success);
+
+$gym-app-theme: mat-dark-theme($gym-app-primary, $gym-app-accent, $gym-app-warn);
+
+@include angular-material-theme($gym-app-theme);

@@ -1,1 +1,55 @@
-<p>workout works!</p>
+<div class="workout">
+
+  <div fxLayout.xs="column" fxLayout="row wrap" fxLayoutWrap>
+    <div fxFlex.xs="100%" fxFlex.sm="0 0 50%" fxFlex="25%" *ngFor="let work of workout.planner">
+
+      <div class="card">
+        <div class="body-card" background="accent">
+          
+          <mat-card>
+            <mat-card-header [ngClass]="work.muscleGroup == workout.type[0] ? 'bg-primary':'bg-accent'">
+              <mat-card-title>{{work.exercise}}</mat-card-title>
+              <mat-card-subtitle>{{work.muscleGroup}}</mat-card-subtitle>
+            </mat-card-header>
+
+            <img mat-card-image [src]="work.img" alt="Photo of a Shiba Inu">
+
+            <mat-card-content>
+              <div fxLayout="row" class="infos">
+                <div fxFlex>
+                  <p class="title">Repeats</p>
+                  <p class="value">{{work.reps}}</p>
+                </div>
+                <div fxFlex>
+                  <p class="title">Weight</p>
+                  <p class="value">{{work.weight}} {{work.weightType}}</p>
+                </div>
+              </div>
+            </mat-card-content>
+
+            <mat-card-actions>
+              <button class="start-exercise" (click)="startExercise(work.set)" *ngIf="!work.set.started" mat-stroked-button color="warn">Start Exercise</button>
+
+              <div *ngIf="work.set.started && !work.set.completed" fxLayout="row wrap" class="txt-center">
+                <div fxFlex 
+                    class="set"
+                    *ngFor="let set of work.set.status; let i = index;"
+                    (click)="toggleSet(work, i)"
+                    [ngClass]="{'done': set}">
+                  {{set ? 'Done' : 'Set: '+(i+1)}}
+                </div>
+              </div>
+            </mat-card-actions>
+
+            <div class="completed" *ngIf="work.set.completed">
+              <p class="info-text">COMPLETE</p>
+            </div>
+          </mat-card>
+
+        </div>
+      </div>
+
+    </div>
+  </div>
+  
+</div>

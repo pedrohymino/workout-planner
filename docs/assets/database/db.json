@@ -1,43 +1,67 @@
 {
-  "workout": {
-    "day1": {
+  "workout": [
+    {
+      "id": 1,
       "type": ["Biceps","Triceps"],
-      "workout": [
+      "img": "assets/img/biceps.png",
+      "subtitle": "workout",
+      "minutes": 90,
+      "planner": [
         {
-          "equipment": "Biceps Curl With Cable",
+          "exercise": "Biceps Curl With Cable",
           "img": "https://www.burnthefatinnercircle.com/members/images/1801.jpg",
           "muscleGroup": ["Biceps"],
-          "set": 3,
+          "set": {
+            "qty": 3,
+            "started": false,
+            "completed": false,
+            "status":[false,false,false]
+          },
           "reps": "10~12",
           "weight": 35,
           "weightType": "lbs",
           "method": []
         },
         {
-          "equipment": "ALTERNATE BICEPS CURL",
+          "exercise": "ALTERNATE BICEPS CURL",
           "img": "https://weighttraining.guide/wp-content/uploads/2016/05/Dumbbell-Alternate-Biceps-Curl.png",
           "muscleGroup": ["Biceps"],
-          "set": 3,
+          "set": {
+            "qty": 3,
+            "started": false,
+            "completed": false,
+            "status":[false,false,false]
+          },
           "reps": "10~12",
           "weight": 20,
           "weightType": "lbs",
           "method": []
         },
         {
-          "equipment": "EZ-BAR CURL",
+          "exercise": "EZ-BAR CURL",
           "img": "https://i.pinimg.com/originals/4b/24/b8/4b24b8f66be5f1ba9f943a794de76c9f.jpg",
           "muscleGroup": ["Biceps"],
-          "set": 3,
+          "set": {
+            "qty": 3,
+            "started": false,
+            "completed": false,
+            "status":[false,false,false]
+          },
           "reps": "10~12",
           "weight": 15,
           "weightType": "lbs",
           "method": []
         },
         {
-          "equipment": "CONCENTRATION CURL",
+          "exercise": "CONCENTRATION CURL",
           "img": "https://weighttraining.guide/wp-content/uploads/2016/05/Dumbbell-Concentration-Curl.png",
           "muscleGroup": ["Biceps"],
-          "set": 3,
+          "set": {
+            "qty": 3,
+            "started": false,
+            "completed": false,
+            "status":[false,false,false]
+          },
           "reps": "10~12",
           "weight": 15,
           "weightType": "lbs",
@@ -46,40 +70,60 @@
 
 
         {
-          "equipment": "Seated dumbbell overhead triceps extension",
+          "exercise": "Seated dumbbell overhead triceps extension",
           "img": "https://weighttraining.guide/wp-content/uploads/2017/08/seated-dumbbell-overhead-triceps-extension-990x576.png",
           "muscleGroup": ["Triceps"],
-          "set": 3,
+          "set": {
+            "qty": 3,
+            "started": false,
+            "completed": false,
+            "status":[false,false,false]
+          },
           "reps": "10~12",
           "weight": 30,
           "weightType": "lbs",
           "method": []
         },
         {
-          "equipment": "Cable triceps kickback",
+          "exercise": "Cable triceps kickback",
           "img": "https://weighttraining.guide/wp-content/uploads/2017/06/Cable-triceps-kickback-990x551.png",
           "muscleGroup": ["Triceps"],
-          "set": 3,
+          "set": {
+            "qty": 3,
+            "started": false,
+            "completed": false,
+            "status":[false,false,false]
+          },
           "reps": "10~12",
           "weight": 15,
           "weightType": "lbs",
           "method": []
         },
         {
-          "equipment": "Cable one-arm reverse-grip triceps push-down",
+          "exercise": "Cable one-arm reverse-grip triceps push-down",
           "img": "https://weighttraining.guide/wp-content/uploads/2017/01/Cable-One-Arm-reverse-grip-Triceps-Push-Down-990x953.png",
           "muscleGroup": ["Triceps"],
-          "set": 3,
+          "set": {
+            "qty": 3,
+            "started": false,
+            "completed": false,
+            "status":[false,false,false]
+          },
           "reps": "10~12",
           "weight": 20,
           "weightType": "lbs",
           "method": []
         },
         {
-          "equipment": "Triceps rope push-down",
+          "exercise": "Triceps rope push-down",
           "img": "https://weighttraining.guide/wp-content/uploads/2016/05/Triceps-Rope-Push-down-990x762.png",
           "muscleGroup": ["Triceps"],
-          "set": 3,
+          "set": {
+            "qty": 3,
+            "started": false,
+            "completed": false,
+            "status":[false,false,false]
+          },
           "reps": "10~12",
           "weight": 90,
           "weightType": "lbs",
@@ -87,5 +131,5 @@
         }
       ]
     }
-  }
+  ]
 }

@@ -1,0 +1,14 @@
+@import '~@angular/material/theming';
+@include mat-core();
+@import 'src/assets/scss/palette';
+
+$themes: (
+  primary: $gym-primary,
+  accent: $gym-accent,
+  warn: $gym-warn
+);
+@each $theme, $var in $themes {
+  .subtitle[color="#{$theme}"]{
+    color: map-get($var, 300);
+  }
+}

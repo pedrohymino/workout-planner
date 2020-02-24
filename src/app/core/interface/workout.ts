@@ -1,17 +1,29 @@
 export interface IWorkouts {
-  day: IDay;
+  workout: IWorkoutInfo[];
 }
-export interface IDay {
-  type: [];
-  workout: IWorkout;
+
+export interface IWorkoutInfo {
+  id: number;
+  type: any[];
+  img: string;
+  subtitle: string;
+  minutes: number;
+  planner: IWorkout[];
 }
 export interface IWorkout {
-  equipment: string;
+  exercise: string;
   img: string;
   muscleGroup: [];
-  set: number;
+  set: ISet;
   reps: string;
   weight: number;
   weightType: string;
   method: []; // bi-sex, drop-set, circuit, pyramid
+}
+
+export interface ISet {
+  qty: number;
+  started: boolean;
+  completed: boolean;
+  status: [];
 }
