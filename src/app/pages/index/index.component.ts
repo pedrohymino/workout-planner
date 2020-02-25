@@ -15,6 +15,7 @@ export class IndexComponent implements OnInit {
   categories;
 
   ngOnInit(): void {
+    console.log('start index');
     this.workoutService.listWorkout().subscribe(
       res => {
         this.categories = res.workout;

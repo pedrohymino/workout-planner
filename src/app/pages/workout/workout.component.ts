@@ -26,6 +26,7 @@ export class WorkoutComponent implements OnInit {
   }
 
   ngOnInit(): void {
+    console.log('start workout');
     this.workoutService.listWorkout().subscribe(
       res => {
         this.workout = res.workout.filter(work => work.id == this.paramID)[0];

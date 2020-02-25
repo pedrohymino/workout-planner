@@ -3,7 +3,7 @@
     {
       "id": 1,
       "type": ["Biceps","Triceps"],
-      "img": "assets/img/biceps.png",
+      "img": "./assets/img/biceps.png",
       "subtitle": "workout",
       "minutes": 90,
       "planner": [
