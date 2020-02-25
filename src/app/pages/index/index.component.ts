@@ -15,14 +15,12 @@ export class IndexComponent implements OnInit {
   categories;
 
   ngOnInit(): void {
-    console.log('start index');
     this.workoutService.listWorkout().subscribe(
       res => {
         this.categories = res.workout;
         this.categories.map(val =>{
           val.type = val.type.join(" "); // remove comma of array
         });
-        console.log(this.categories);
       }
     );
   }

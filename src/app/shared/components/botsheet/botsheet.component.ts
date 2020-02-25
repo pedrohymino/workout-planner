@@ -15,7 +15,6 @@ export class BotsheetComponent implements OnInit {
 
   ngOnInit(): void {
     this.list = this._botSheetRef.containerInstance.bottomSheetConfig.data;
-    console.log(this.list)
   }
 
   closeSheet(): void {

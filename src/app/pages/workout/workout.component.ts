@@ -20,17 +20,14 @@ export class WorkoutComponent implements OnInit {
     private timerService: TimerServiceService
     ) {
     this.route.params.subscribe(params => {
-      console.log('first',this.workout);
       this.paramID = params.id;
     });
   }
 
   ngOnInit(): void {
-    console.log('start workout');
     this.workoutService.listWorkout().subscribe(
       res => {
         this.workout = res.workout.filter(work => work.id == this.paramID)[0];
-        console.log(this.workout)
       }
     );
   }
