@@ -1,6 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { MatBottomSheet, MatBottomSheetConfig } from '@angular/material/bottom-sheet';
-import { BotsheetComponent } from '../botsheet/botsheet.component';
+import { BotsheetComponent } from 'src/app/shared/components/botsheet/botsheet.component';
 
 const defaultConfig = new MatBottomSheetConfig();
 

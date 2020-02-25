@@ -1,8 +1,8 @@
 import { Component, OnInit } from '@angular/core';
 import { ActivatedRoute, Router } from '@angular/router';
 import { WorkoutServiceService } from 'src/app/core/services/workout-service.service';
-import { IWorkoutInfo } from '../../core/interface/workout'
-import { TimerServiceService } from '../../core/services/timer-service.service';
+import { IWorkoutInfo } from 'src/app/core/interface/workout'
+import { TimerServiceService } from 'src/app/core/services/timer-service.service';
 
 @Component({
   selector: 'app-workout',

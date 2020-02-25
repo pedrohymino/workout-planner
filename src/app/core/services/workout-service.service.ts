@@ -1,7 +1,7 @@
 import { Injectable } from '@angular/core';
 import { HttpClient } from '@angular/common/http';
 import { Observable } from 'rxjs';
-import { IWorkouts } from '../interface/workout';
+import { IWorkouts } from 'src/app/core/interface/workout';
 
 // https://wger.de/en/exercise/overview/
 // https://weighttraining.guide/category/exercises/
