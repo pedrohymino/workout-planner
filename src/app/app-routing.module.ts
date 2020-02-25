@@ -6,7 +6,8 @@ import { IndexComponent } from './pages/index/index.component';
 import { WorkoutComponent } from './pages/workout/workout.component';
 
 const routes: Routes = [
-  { path: '',
+  { 
+    path: '',
     redirectTo: '/index',
     pathMatch: 'full'
   },
@@ -21,7 +22,7 @@ const routes: Routes = [
 ];
 
 @NgModule({
-  imports: [RouterModule.forRoot(routes)],
+  imports: [RouterModule.forRoot(routes, { useHash: true })],
   exports: [RouterModule]
 })
 export class AppRoutingModule { }
