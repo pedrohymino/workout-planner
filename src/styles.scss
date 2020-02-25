@@ -7,7 +7,6 @@ html, body {
   margin:0;
   padding:0;
   height:100%;
-  overflow-x: hidden;
 }
 
 * { font-family: 'Odibee Sans', "Helvetica Neue", sans-serif; }
@@ -50,7 +49,11 @@ app-footer {
 
 // XS
 @media screen and (max-width: 599px){
-  #content-wrap {padding: 15px;}
+  #content-wrap {
+    padding: 15px;
+    padding-bottom: calc(15px + 56px );
+  }
+  app-footer {height: 56px;}
 }
 
 // SM

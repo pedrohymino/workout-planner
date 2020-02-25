@@ -5,6 +5,7 @@ import { IWorkouts } from 'src/app/core/interface/workout';
 
 // https://wger.de/en/exercise/overview/
 // https://weighttraining.guide/category/exercises/
+// https://www.bodybuilding.com/exercises/finder/?muscle=shoulders
 
 @Injectable({
   providedIn: 'root'

@@ -10,7 +10,8 @@ $sides: (left, center, right);
 $themes: (
   primary: $gym-primary,
   accent: $gym-accent,
-  warn: $gym-warn
+  warn: $gym-warn,
+  success: $gym-success
 );
 @each $theme, $var in $themes {
   [color="#{$theme}"]{

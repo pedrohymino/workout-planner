@@ -9,7 +9,7 @@
       "planner": [
         {
           "exercise": "Biceps Curl With Cable",
-          "img": "https://www.burnthefatinnercircle.com/members/images/1801.jpg",
+          "img": "./assets/database/imgs/biceps/Cable-Cur.png",
           "muscleGroup": ["Biceps"],
           "set": {
             "qty": 3,
@@ -24,7 +24,7 @@
         },
         {
           "exercise": "ALTERNATE BICEPS CURL",
-          "img": "https://weighttraining.guide/wp-content/uploads/2016/05/Dumbbell-Alternate-Biceps-Curl.png",
+          "img": "./assets/database/imgs/biceps/Dumbbell-Alternate-Biceps-Curl.png",
           "muscleGroup": ["Biceps"],
           "set": {
             "qty": 3,
@@ -39,7 +39,7 @@
         },
         {
           "exercise": "EZ-BAR CURL",
-          "img": "https://i.pinimg.com/originals/4b/24/b8/4b24b8f66be5f1ba9f943a794de76c9f.jpg",
+          "img": "./assets/database/imgs/biceps/EZ-Bar-Curl.png",
           "muscleGroup": ["Biceps"],
           "set": {
             "qty": 3,
@@ -54,7 +54,7 @@
         },
         {
           "exercise": "CONCENTRATION CURL",
-          "img": "https://weighttraining.guide/wp-content/uploads/2016/05/Dumbbell-Concentration-Curl.png",
+          "img": "./assets/database/imgs/biceps/Dumbbell-Concentration-Curl.png",
           "muscleGroup": ["Biceps"],
           "set": {
             "qty": 3,
@@ -71,7 +71,7 @@
 
         {
           "exercise": "Seated dumbbell overhead triceps extension",
-          "img": "https://weighttraining.guide/wp-content/uploads/2017/08/seated-dumbbell-overhead-triceps-extension-990x576.png",
+          "img": "./assets/database/imgs/triceps/seated-dumbbell-overhead-triceps-extension.png",
           "muscleGroup": ["Triceps"],
           "set": {
             "qty": 3,
@@ -86,7 +86,7 @@
         },
         {
           "exercise": "Cable triceps kickback",
-          "img": "https://weighttraining.guide/wp-content/uploads/2017/06/Cable-triceps-kickback-990x551.png",
+          "img": "./assets/database/imgs/triceps/Cable-triceps-kickback.png",
           "muscleGroup": ["Triceps"],
           "set": {
             "qty": 3,
@@ -101,7 +101,7 @@
         },
         {
           "exercise": "Cable one-arm reverse-grip triceps push-down",
-          "img": "https://weighttraining.guide/wp-content/uploads/2017/01/Cable-One-Arm-reverse-grip-Triceps-Push-Down-990x953.png",
+          "img": "./assets/database/imgs/triceps/Cable-One-Arm-reverse-grip-Triceps-Push-Down.png",
           "muscleGroup": ["Triceps"],
           "set": {
             "qty": 3,
@@ -116,7 +116,7 @@
         },
         {
           "exercise": "Triceps rope push-down",
-          "img": "https://weighttraining.guide/wp-content/uploads/2016/05/Triceps-Rope-Push-down-990x762.png",
+          "img": "./assets/database/imgs/triceps/Triceps-Rope-Push-down.png",
           "muscleGroup": ["Triceps"],
           "set": {
             "qty": 3,
@@ -126,6 +126,433 @@
           },
           "reps": "10~12",
           "weight": 90,
+          "weightType": "lbs",
+          "method": []
+        },
+
+        {
+          "exercise": "Crunch",
+          "img": "./assets/database/imgs/abs/Crunch.png",
+          "muscleGroup": ["Abs"],
+          "set": {
+            "qty": 3,
+            "started": false,
+            "completed": false,
+            "status":[false,false,false]
+          },
+          "reps": "25~45",
+          "weight": 0,
+          "weightType": "lbs",
+          "method": []
+        },
+        {
+          "exercise": "Lying leg and hip raise",
+          "img": "./assets/database/imgs/abs/lying-leg-hip-raise.png",
+          "muscleGroup": ["Abs"],
+          "set": {
+            "qty": 3,
+            "started": false,
+            "completed": false,
+            "status":[false,false,false]
+          },
+          "reps": "25~45",
+          "weight": 0,
+          "weightType": "lbs",
+          "method": []
+        }
+      ]
+    },
+
+    {
+      "id": 2,
+      "type": ["Chest","Back"],
+      "img": "./assets/img/chest.png",
+      "subtitle": "workout",
+      "minutes": 90,
+      "planner": [
+        {
+          "exercise": "Barbell bench press",
+          "img": "./assets/database/imgs/chest/Barbell-Bench-Press.png",
+          "muscleGroup": ["Chest"],
+          "set": {
+            "qty": 3,
+            "started": false,
+            "completed": false,
+            "status":[false,false,false]
+          },
+          "reps": "10~12",
+          "weight": 15,
+          "weightType": "lbs",
+          "method": []
+        },
+        {
+          "exercise": "Incline dumbbell fly",
+          "img": "./assets/database/imgs/chest/Incline-dumbbell-fly.png",
+          "muscleGroup": ["Chest"],
+          "set": {
+            "qty": 3,
+            "started": false,
+            "completed": false,
+            "status":[false,false,false]
+          },
+          "reps": "10~12",
+          "weight": 25,
+          "weightType": "lbs",
+          "method": []
+        },
+        {
+          "exercise": "Machine chest press",
+          "img": "./assets/database/imgs/chest/machine-chest-press.png",
+          "muscleGroup": ["Chest"],
+          "set": {
+            "qty": 3,
+            "started": false,
+            "completed": false,
+            "status":[false,false,false]
+          },
+          "reps": "10~12",
+          "weight": 20,
+          "weightType": "lbs",
+          "method": []
+        },
+        {
+          "exercise": "Machine fly",
+          "img": "./assets/database/imgs/chest/Machine-Fly.png",
+          "muscleGroup": ["Chest"],
+          "set": {
+            "qty": 3,
+            "started": false,
+            "completed": false,
+            "status":[false,false,false]
+          },
+          "reps": "10~12",
+          "weight": 50,
+          "weightType": "lbs",
+          "method": []
+        },
+
+
+        {
+          "exercise": "Behind-the-neck lat pull-down",
+          "img": "./assets/database/imgs/back/behind-the-neck-lat-pull-down.png",
+          "muscleGroup": ["Back"],
+          "set": {
+            "qty": 3,
+            "started": false,
+            "completed": false,
+            "status":[false,false,false]
+          },
+          "reps": "10~12",
+          "weight": 45,
+          "weightType": "lbs",
+          "method": []
+        },
+        {
+          "exercise": "Close neutral-grip lat pull-down",
+          "img": "./assets/database/imgs/back/Cable-close-grip-pull-down.png",
+          "muscleGroup": ["Back"],
+          "set": {
+            "qty": 3,
+            "started": false,
+            "completed": false,
+            "status":[false,false,false]
+          },
+          "reps": "10~12",
+          "weight": 50,
+          "weightType": "lbs",
+          "method": []
+        },
+        {
+          "exercise": "Seated cable row",
+          "img": "./assets/database/imgs/back/cablerow.png",
+          "muscleGroup": ["Back"],
+          "set": {
+            "qty": 3,
+            "started": false,
+            "completed": false,
+            "status":[false,false,false]
+          },
+          "reps": "10~12",
+          "weight": 90,
+          "weightType": "lbs",
+          "method": []
+        },
+        {
+          "exercise": "Landmine row",
+          "img": "./assets/database/imgs/back/landmine-row.png",
+          "muscleGroup": ["Back"],
+          "set": {
+            "qty": 3,
+            "started": false,
+            "completed": false,
+            "status":[false,false,false]
+          },
+          "reps": "10~12",
+          "weight": 25,
+          "weightType": "lbs",
+          "method": []
+        },
+
+        {
+          "exercise": "Bicycle crunch",
+          "img": "./assets/database/imgs/abs/bicycle-crunch.png",
+          "muscleGroup": ["Abs"],
+          "set": {
+            "qty": 3,
+            "started": false,
+            "completed": false,
+            "status":[false,false,false]
+          },
+          "reps": "25~45",
+          "weight": 0,
+          "weightType": "lbs",
+          "method": []
+        },
+        {
+          "exercise": "Decline twisting sit-up",
+          "img": "./assets/database/imgs/abs/Decline-Twisting-Sit-up.png",
+          "muscleGroup": ["Abs"],
+          "set": {
+            "qty": 3,
+            "started": false,
+            "completed": false,
+            "status":[false,false,false]
+          },
+          "reps": "25~45",
+          "weight": 0,
+          "weightType": "lbs",
+          "method": []
+        }
+      ]
+    },
+
+    {
+      "id": 3,
+      "type": ["Legs","Shoulders"],
+      "img": "./assets/img/leg.png",
+      "subtitle": "workout",
+      "minutes": 90,
+      "planner": [
+        {
+          "exercise": "Incline leg press",
+          "img": "./assets/database/imgs/legs/Sled-45-degree-Leg-Press.png",
+          "muscleGroup": ["Legs"],
+          "set": {
+            "qty": 3,
+            "started": false,
+            "completed": false,
+            "status":[false,false,false]
+          },
+          "reps": "10~12",
+          "weight": 80,
+          "weightType": "lbs",
+          "method": []
+        },
+        {
+          "exercise": "Machine seated calf raise",
+          "img": "./assets/database/imgs/legs/Lever-Seated-Calf-Raise-plate-loaded.png",
+          "muscleGroup": ["Legs"],
+          "set": {
+            "qty": 3,
+            "started": false,
+            "completed": false,
+            "status":[false,false,false]
+          },
+          "reps": "10~12",
+          "weight": 40,
+          "weightType": "lbs",
+          "method": []
+        },
+        {
+          "exercise": "Leg extension",
+          "img": "./assets/database/imgs/legs/lever-leg-extension.png",
+          "muscleGroup": ["Legs"],
+          "set": {
+            "qty": 3,
+            "started": false,
+            "completed": false,
+            "status":[false,false,false]
+          },
+          "reps": "10~12",
+          "weight": 35,
+          "weightType": "lbs",
+          "method": []
+        },
+        {
+          "exercise": "Dumbbell lunge",
+          "img": "./assets/database/imgs/legs/Dumbbell-Lunge-2.png",
+          "muscleGroup": ["Legs"],
+          "set": {
+            "qty": 3,
+            "started": false,
+            "completed": false,
+            "status":[false,false,false]
+          },
+          "reps": "10~12",
+          "weight": 15,
+          "weightType": "lbs",
+          "method": []
+        },
+
+
+        {
+          "exercise": "Alternating dumbbell front raise",
+          "img": "./assets/database/imgs/shoulders/Alternating-dumbbell-front-raise.png",
+          "muscleGroup": ["Shoulders"],
+          "set": {
+            "qty": 3,
+            "started": false,
+            "completed": false,
+            "status":[false,false,false]
+          },
+          "reps": "10~12",
+          "weight": 15,
+          "weightType": "lbs",
+          "method": []
+        },
+        {
+          "exercise": "Dumbbell lateral raise",
+          "img": "./assets/database/imgs/shoulders/dumbbell-lateral-raise.png",
+          "muscleGroup": ["Shoulders"],
+          "set": {
+            "qty": 3,
+            "started": false,
+            "completed": false,
+            "status":[false,false,false]
+          },
+          "reps": "10~12",
+          "weight": 15,
+          "weightType": "lbs",
+          "method": []
+        },
+        {
+          "exercise": "Seated dumbbell overhead press",
+          "img": "./assets/database/imgs/shoulders/Dumbbell-Shoulder-Press.png",
+          "muscleGroup": ["Shoulders"],
+          "set": {
+            "qty": 3,
+            "started": false,
+            "completed": false,
+            "status":[false,false,false]
+          },
+          "reps": "10~12",
+          "weight": 20,
+          "weightType": "lbs",
+          "method": []
+        },
+        {
+          "exercise": "Cable wide-grip upright row",
+          "img": "./assets/database/imgs/shoulders/Cable-Upright-Row.png",
+          "muscleGroup": ["Shoulders"],
+          "set": {
+            "qty": 3,
+            "started": false,
+            "completed": false,
+            "status":[false,false,false]
+          },
+          "reps": "10~12",
+          "weight": 25,
+          "weightType": "lbs",
+          "method": []
+        },
+
+        {
+          "exercise": "Crunch",
+          "img": "./assets/database/imgs/abs/Crunch.png",
+          "muscleGroup": ["Abs"],
+          "set": {
+            "qty": 3,
+            "started": false,
+            "completed": false,
+            "status":[false,false,false]
+          },
+          "reps": "25~45",
+          "weight": 0,
+          "weightType": "lbs",
+          "method": []
+        },
+        {
+          "exercise": "Lying leg and hip raise",
+          "img": "./assets/database/imgs/abs/lying-leg-hip-raise.png",
+          "muscleGroup": ["Abs"],
+          "set": {
+            "qty": 3,
+            "started": false,
+            "completed": false,
+            "status":[false,false,false]
+          },
+          "reps": "25~45",
+          "weight": 0,
+          "weightType": "lbs",
+          "method": []
+        }
+      ]
+    },
+
+    {
+      "id": 4,
+      "type": ["Running"],
+      "img": "./assets/img/run.png",
+      "subtitle": "Cardio",
+      "minutes": 30,
+      "planner": [
+        {
+          "exercise": "Indoor",
+          "img": "./assets/database/imgs/cardio/indoor.jpg",
+          "muscleGroup": ["Running"],
+          "set": {
+            "qty": 1,
+            "started": false,
+            "completed": false,
+            "status":[false]
+          },
+          "reps": "20~40",
+          "weight": 0,
+          "weightType": "lbs",
+          "method": []
+        },
+        {
+          "exercise": "Bike",
+          "img": "./assets/database/imgs/cardio/bike.jpg",
+          "muscleGroup": ["Running"],
+          "set": {
+            "qty": 1,
+            "started": false,
+            "completed": false,
+            "status":[false]
+          },
+          "reps": "20~40",
+          "weight": 0,
+          "weightType": "lbs",
+          "method": []
+        },
+        {
+          "exercise": "Elliptical",
+          "img": "./assets/database/imgs/cardio/elliptical.jpg",
+          "muscleGroup": ["Cardio"],
+          "set": {
+            "qty": 1,
+            "started": false,
+            "completed": false,
+            "status":[false]
+          },
+          "reps": "20~40",
+          "weight": 0,
+          "weightType": "lbs",
+          "method": []
+        },
+        {
+          "exercise": "Stair Climber",
+          "img": "./assets/database/imgs/cardio/stair-climber.jpg",
+          "muscleGroup": ["Cardio"],
+          "set": {
+            "qty": 1,
+            "started": false,
+            "completed": false,
+            "status":[false]
+          },
+          "reps": "20~40",
+          "weight": 0,
           "weightType": "lbs",
           "method": []
         }

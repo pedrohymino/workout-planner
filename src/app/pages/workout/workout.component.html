@@ -7,7 +7,8 @@
         <div class="body-card" background="accent">
           
           <mat-card>
-            <mat-card-header [ngClass]="work.muscleGroup == workout.type[0] ? 'bg-primary':'bg-accent'">
+            <!-- <mat-card-header [ngClass]="work.muscleGroup == workout.type[0] ? 'bg-primary':'bg-accent'"> -->
+            <mat-card-header [ngClass]="{'bg-primary' : work.muscleGroup == workout.type[0], 'bg-warn' : work.muscleGroup == 'Abs', 'bg-accent' : work.muscleGroup == workout.type[1]}">
               <mat-card-title>{{work.exercise}}</mat-card-title>
               <mat-card-subtitle>{{work.muscleGroup}}</mat-card-subtitle>
             </mat-card-header>
